@@ -45,7 +45,7 @@ public class homeScreenTest {
 
 
     @Test
-    public void testUnivNavBar() throws Exception {
+    public void test1UnivNavBar() throws Exception {
         univNavBar.navigateToWatchTab(wd);
         univNavBar.navigateToBrowseTab(wd);
         univNavBar.navigateToMoreTab(wd);
@@ -55,7 +55,7 @@ public class homeScreenTest {
     }
 
     @Test
-    public void testActionBars() throws Exception {
+    public void test2ActionBars() throws Exception {
         homeScreen.clickActionsBars(wd);
 
     }
