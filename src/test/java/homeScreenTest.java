@@ -28,11 +28,11 @@ public class homeScreenTest {
         wd = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);*/
 
-        capabilities.setCapability("testobject_api_key", "A2D588D13BA940FF8F765F450BC19B07");
+        capabilities.setCapability("testobject_api_key", "B77C35AFB4FF437CA0D0F51F4E4E7E66");
         capabilities.setCapability("appWaitActivity", "net.aljazeera.english.activity.SplashScreenActivity");
-        capabilities.setCapability("deviceName", "Motorola_Moto_E_2nd_gen_free");
+        capabilities.setCapability("deviceName", "Samsung_Galaxy_S6_sjc_free");
         capabilities.setCapability("recordScreenshots", "true");
-        wd = new AndroidDriver(new URL("https://eu1.appium.testobject.com/wd/hub"), capabilities);
+        wd = new AndroidDriver(new URL("https://us1.appium.testobject.com/wd/hub"), capabilities);
 
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     }
