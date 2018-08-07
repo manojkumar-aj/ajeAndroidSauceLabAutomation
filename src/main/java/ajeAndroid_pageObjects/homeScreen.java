@@ -30,7 +30,14 @@ public class homeScreen {
         actionBars.get(0).click();
         WebElement topStories = wd.findElement(By.id("net.aljazeera.english:id/recycler_view"));
         new WebDriverWait(wd, 10).until(ExpectedConditions.visibilityOf(topStories));
+        screenshot.takeScreenshot(wd);
         System.out.println("Navigated to Top Stories");
+
+        actionBars.get(2).click();
+        WebElement topStories = wd.findElement(By.id("net.aljazeera.english:id/recycler_view"));
+        new WebDriverWait(wd, 10).until(ExpectedConditions.visibilityOf(topStories));
+        screenshot.takeScreenshot(wd);
+        
     }
 
     public static void checkListOfStories(AndroidDriver wd) {
